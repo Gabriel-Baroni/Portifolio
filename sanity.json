@@ -1,0 +1,21 @@
+{
+    "root": true,
+    "project": {
+      "name": "portifolio",
+      "basePath": "/studio"
+    },
+    "api": {
+      "projectId": "9nmxl7mi",
+      "dataset": "production"
+    },
+    "plugins": [
+      "@sanity/vision"
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "@sanity/vision"
+        ]
+      }
+    }
+  }

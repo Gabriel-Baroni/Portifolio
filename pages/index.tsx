@@ -30,7 +30,7 @@ const Home  =({pageInfo, experiences, projects, skills, socials}: Props) => {
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory
     overflow-y-scroll overflow-x-hiddenl z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#4169E1]/80">
       <Head>
-        <title>Gabriel Baroni Portifólio</title>
+        <title>Gabriel Baroni Portifolio</title>
       </Head>
 
       {/* Header*/}

@@ -1,17 +1,15 @@
 {
   "root": true,
   "project": {
-    "name": "PORTIFOLIO"
+    "name": "portifolio",
+    "basePath": "/studio"
   },
   "api": {
     "projectId": "9nmxl7mi",
     "dataset": "production"
   },
   "plugins": [
-    "@sanity/base",
-    "@sanity/default-layout",
-    "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/vision"
   ],
   "env": {
     "development": {
@@ -19,11 +17,5 @@
         "@sanity/vision"
       ]
     }
-  },
-  "parts": [
-    {
-      "name": "part:@sanity/base/schema",
-      "path": "./schemas/schema"
-    }
-  ]
+  }
 }
