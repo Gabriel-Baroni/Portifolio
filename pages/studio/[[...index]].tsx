@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import { NextStudio } from 'next-sanity/studio'
-import { metadata } from 'next-sanity/studio/metadata'
-import config from '../../sanity/sanity.config'
+import Head from 'next/head';
+import { NextStudio } from 'next-sanity/studio';
+import { metadata } from 'next-sanity/studio/metadata';
+import config from '../../sanity/sanity.config';
 
 export default function StudioPage() {
   return (
@@ -11,7 +11,8 @@ export default function StudioPage() {
           <meta key={key} name={key} content={value} />
         ))}
       </Head>
-      <NextStudio config={config} />
+      {/* Passando a configuração do Sanity */}
+      <NextStudio {...config} />
     </>
-  )
+  );
 }
