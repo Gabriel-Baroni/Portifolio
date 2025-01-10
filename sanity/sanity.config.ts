@@ -11,7 +11,7 @@ import {apiVersion, dataset, projectId} from './env'
 import {schema} from './schema'
 
 export default defineConfig({
-  basePath: '/Users/gdepa/OneDrive/Documentos/Projetos/portifolio/sanity',
+  basePath: '/studio',
   projectId,
   dataset,
   // Add and edit the content schema in the './sanity/schema' folder
