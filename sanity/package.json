@@ -1,21 +1,24 @@
 {
-  "name": "portifolio",
-  "version": "0.1.0",
+  "name": "sanity",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "sanity start",
+    "build": "sanity build"
   },
   "dependencies": {
+    "@sanity/base": "^2.0.0",
+    "@sanity/core": "^2.0.0",
+    "@sanity/default-layout": "^2.0.0",
+    "@sanity/default-login": "^2.0.0",
+    "@sanity/desk-tool": "^2.0.0",
     "@sanity/eslint-config-studio": "^2.0.0",
     "@sanity/types": "^3.69.0",
     "@sanity/vision": "^3.69.0",
     "eslint": "^8.6.0",
     "prop-types": "^15.7.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^17.0",
+    "react-dom": "^17.0",
     "sanity": "^3.69.0",
     "styled-components": "^5.2.0"
   },
