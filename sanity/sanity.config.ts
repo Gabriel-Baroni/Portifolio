@@ -1,25 +1,21 @@
-/**
- * This configuration is used to for the Sanity Studio that’s mounted on the `\pages\Users\gdepa\OneDrive\Documentos\Projetos\portifolio-baroni\sanity\[[...index]].tsx` route
- */
+import { visionTool } from '@sanity/vision';
+import { defineConfig } from 'sanity';
+import { deskTool } from 'sanity/desk';
 
-import {visionTool} from '@sanity/vision'
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-
-// Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import {apiVersion, dataset, projectId} from './env'
-import {schema} from './schema'
+// Vá para https://www.sanity.io/docs/api-versioning para aprender como funciona o versionamento de API
+import { apiVersion, dataset, projectId } from './env';
+import { schema } from './schema';
 
 export default defineConfig({
   basePath: '/studio',
   projectId,
   dataset,
-  // Add and edit the content schema in the './sanity/schema' folder
+  // Adicione e edite o esquema de conteúdo na pasta './sanity/schema'
   schema,
   plugins: [
-    structureTool(),
-    // Vision is a tool that lets you query your content with GROQ in the studio
+    deskTool(),
+    // Vision é uma ferramenta que permite consultar seu conteúdo com GROQ no estúdio
     // https://www.sanity.io/docs/the-vision-plugin
-    visionTool({defaultApiVersion: apiVersion}),
+    visionTool({ defaultApiVersion: apiVersion }),
   ],
-})
+});
