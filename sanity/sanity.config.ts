@@ -2,14 +2,18 @@
  * This configuration is used for the Sanity Studio that’s mounted on the /pages/studio/[[...index]].tsx route
  */
 
-import { defineCliConfig as defineConfig } from 'sanity/cli'; // Fix import statement
+import { defineConfig } from 'sanity'; // Added import for defineConfig
 import { visionTool } from '@sanity/vision';
 import { schema } from './schema';
 import { apiVersion, dataset, projectId } from './env';
 
 export default defineConfig({
-  api: {
-    projectId,
-    dataset,
-  },
+  basePath: '/studio',
+  projectId,
+  dataset,
+  schema,
+  plugins: [
+    // Vision permite consultas com GROQ
+    visionTool({ defaultApiVersion: apiVersion }),
+  ],
 });
