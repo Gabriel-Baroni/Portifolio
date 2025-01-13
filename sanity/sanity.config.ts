@@ -3,7 +3,7 @@
  */
 
 import { visionTool } from '@sanity/vision';
-import { defineConfig } from 'sanity';
+import { defineConfig } from 'sanity'; // Correct import for Studio configuration
 import { structureTool } from 'sanity/structure';
 
 // Vá para https://www.sanity.io/docs/api-versioning para aprender como funciona o versionamento de API
@@ -11,7 +11,7 @@ import { apiVersion, dataset, projectId } from './env';
 import { schema } from './schema';
 
 export default defineConfig({
-  basePath: '/studio',
+  basePath: '/Users/gdepa/OneDrive/Documentos/Projetos/portifolio/sanity',
   projectId,
   dataset,
   // Adicione e edite o esquema de conteúdo na pasta './sanity/schema'
