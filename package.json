@@ -25,7 +25,7 @@
     "react-hook-form": "^7.49.2",
     "react-simple-typewriter": "^5.0.1",
     "react-social-icons": "^6.7.0",
-    "sanity": "^3.69.0",
+    "sanity": "^3.0.0", 
     "styled-components": "6",
     "styled-jsx": "^5.1.2"
   },
